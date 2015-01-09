@@ -6,31 +6,37 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+var isTyler = function (name) {
+  if (name === 'Tyler') {
+    return true;
+  } else {
+    return false;
+  };
+};
 
 //Next problem
-
-
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
   //Code Here
+var getName = function () {
+  var name = prompt ("What is your name?")
+    return name;
+};
 
 
 //Next Problem
-
-
 
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+var welcome = function () {
+  alert("Welcome " + getName())
+};
 
 //Next problem
-
-
 
 //Write a function called adder that uses the 'arguments' keyword that comes with every function to
 //loop over all the arguments the function received, add them all together, then return the result.
