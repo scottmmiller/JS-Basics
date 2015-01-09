@@ -44,54 +44,74 @@ var welcome = function () {
 //returned from adder.
 
   //Code Here
+var adder = function () {
+  var sumAll = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    sumAll = sumAll + arguments[i];
+  };
+  alert("The Total Number was " + sumAll);
+};
 
+adder(1,2,3,4,5);
+arguments = [1,2,3,4,5]
 
 //Next Problem
-
-
 
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+parameters are part of the function definition; arguments are part of the invocation;
 
 //Next problem
-
-
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
   //Answer Here
+1. false
+2. undefined
+3. null
+4. empty string
+5. -0 or 0
+6. NaN
+to check: if(val != true){
+  //do something)
+};
 
 
 
 //Next Problem
 
-
-
 //Create a function called myName that returns your name
 
   //Code Here
+var myName = function () {
+  return "Skoot"
+};
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+var myNewName = myName();
 
 //Now alert the result of invoking newMyName
-
+alert(myNewName);
 
 
 //Next problem
 
-
-
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
+var outerFn = function () {
+  return function () {
+    return "Skoot";
+  };
+};
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
+innerFn();
