@@ -77,6 +77,11 @@ parameters are part of the function definition; arguments are part of the invoca
 to check: if(val != true){
   //do something)
 };
+  // if(name){
+  //   true;
+  // }else{
+  //   false;
+  // };
 
 
 
